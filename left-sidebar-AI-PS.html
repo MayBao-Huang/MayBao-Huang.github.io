@@ -12,30 +12,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/images.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!--程式碼-->
     <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
-
-    <script>
-        $(document).ready(function() {
-            $("#show1").click(function() {
-                $("#div1").show();
-                $("#div2").hide();
-                $("#div3").hide();
-            });
-            $("#show2").click(function() {
-                $("#div1").hide();
-                $("#div2").show();
-                $("#div3").hide();
-            });
-            $("#show3").click(function() {
-                $("#div1").hide();
-                $("#div2").hide();
-                $("#div3").show();
-            });
-        });
-    </script>
 </head>
 
 <body class="left-sidebar is-preload">
@@ -80,75 +61,79 @@
         <!-- Main -->
         <div class="wrapper">
             <div class="container" id="main">
-                <div class="row gtr-150">
-                    <div class="col-4 col-12-narrower">
-
-                        <!-- Sidebar -->
-                        <section id="sidebar">
-                            <section>
-                                <img class="image featured" src="images/index2.jpg" alt="" />
-                                <header>
-                                    <h6>110/12/2<br>專題發表</h6>
-                                </header>
-                                <ul class="actions">
-                                    <div class="button" id="show1">點擊</div>
-                                </ul>
-                            </section>
-                            <section>
-                                <img class="image featured" src="images/left-sidebar-AI-PS_2.jpg" alt="" />
-                                <header>
-                                    <h6>110/9/25<br> 參與「2021 年國際醫學資訊聯合研討會」論文發表</h6>
-                                </header>
-                                <ul class="actions">
-                                    <div class="button" id="show2">點擊</div>
-                                </ul>
-                            </section>
-                            <section>
-                                <img class="image featured" src="images/left-sidebar-AI-PS_3.jpg" alt="" />
-                                <header>
-                                    <h6>109/11/7<br> 入圍「2020 資訊應用服務創新競賽」決賽 所設計之海報。
-                                    </h6>
-                                </header>
-                                <ul class="actions">
-                                    <div class="button" id="show3">點擊</div>
-                                </ul>
-                            </section>
-                        </section>
-
+                <!-- <p class="heading">相關作品</p> -->
+                <div class="gallery-image">
+                    <div class="img-box">
+                        <img class="img-hover" src="images/ThematicPosters.jpg" alt="" />
+                        <div class="transparent-box">
+                            <div class="caption">
+                                <p>專題發表</p>
+                                <p class="opacity-low">110/12/2</p>
+                            </div>
+                            <input class="modal-btn" type="checkbox" id="modal-btn01" name="modal-btn01" />
+                            <label id="label01" for="modal-btn01">查看
+                                <span class="material-icons">keyboard_double_arrow_right</span>
+                            </label>
+                            <div class="modal" id="modal01">
+                                <div class="modal-wrap" id="modal-wrap01">
+                                    <img src="images/ThematicPosters.jpg" alt="">
+                                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-8 col-12-narrower imp-narrower">
 
-                        <!-- Content -->
-                        <header>
-                            <h2>平面設計</h2>
-                            <p>請點擊左側按鈕查看</p>
-                        </header>
-                        <div id="div1" style="display: none;">
-                            <article id="content">
-                                <iframe src="pdf/Trifold01.pdf" width="100%" height="768px"></iframe>
-                                <iframe src="pdf/Trifold02.pdf" width="100%" height="768px"></iframe>
-                                <p>110/12/2 專題發表
-                                    <br> 所設計之海報以及三摺頁。
-                                </p>
-                            </article>
+                    <div class="img-box">
+                        <img class="img-hover" src="images/JCMIT.jpg" alt="" />
+                        <div class="transparent-box">
+                            <div class="caption">
+                                <p>「2021 年國際醫學資訊聯合研討會」論文發表</p>
+                                <p class="opacity-low">110/9/25</p>
+                            </div>
+                            <input class="modal-btn" type="checkbox" id="modal-btn02" name="modal-btn02" />
+                            <label for="modal-btn02">查看
+                                <span class="material-icons">keyboard_double_arrow_right</span>
+                            </label>
+                            <div class="modal" id="modal02">
+                                <div class="modal-wrap">
+                                    <img src="images/JCMIT.jpg" alt="">
+                                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                                </div>
+                            </div>
                         </div>
-                        <div id="div2" style="display: none;">
-                            <article id="content">
-                                <img class="image featured" src="images/poster02.jpg" style="border:1px black dashed;" alt="" />
-                                <p>110/9/25<br> 參與「2021 年國際醫學資訊聯合研討會」論文發表<br> 所設計之海報。
-                                </p>
-                            </article>
-                        </div>
-                        <div id="div3" style="display: none;">
-                            <article id="content">
-                                <img class="image featured" src="images/poster03.jpg" style="border:1px black dashed;" alt="" />
-                                <p>109/11/7 <br> 入圍「2020 資訊應用服務創新競賽」決賽<br> 所設計之海報。
-                                </p>
-                            </article>
-                        </div>
+                    </div>
 
+                    <div class="img-box">
+                        <img class="img-hover" src="images/InnoServe.jpg" alt="" />
+                        <div class="transparent-box">
+                            <div class="caption">
+                                <p>入圍「2020 資訊應用服務創新競賽」決賽</p>
+                                <p class="opacity-low">109/11/7</p>
+                            </div>
+                            <input class="modal-btn" type="checkbox" id="modal-btn03" name="modal-btn03" />
+                            <label for="modal-btn03">查看
+                                <span class="material-icons">keyboard_double_arrow_right</span>
+                            </label>
+                            <div class="modal" id="modal03">
+                                <div class="modal-wrap">
+                                    <img src="images/InnoServe.jpg" alt="" />
+                                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <!-- <div class="section full-height">
+                    <input class="modal-btn" type="checkbox" id="modal-btn" name="modal-btn" />
+                    <label for="modal-btn">Open Modal <i class="uil uil-expand-arrows"></i></label>
+                    <div class="modal">
+                        <div class="modal-wrap">
+                            <img src="https://assets.codepen.io/1462889/sl3.jpg" alt="">
+                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                        </div>
+                    </div>
+                </div> -->
+
                 <header class="major">
                     <h3>其他作品</h3>
                     <hr>
