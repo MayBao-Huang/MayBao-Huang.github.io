@@ -279,18 +279,26 @@
 }
 
 @media(max-width:768px) {
+    .img-hover {
+        width: 100%;
+        height: auto;
+    }
     .modal-wrap img {
         width: 100%;
         height: auto;
     }
     .gallery-image img {
-        /* height: 250px; */
+        min-height: 250px;
         height: auto;
         width: 100%;
     }
 }
 
 @media screen and (max-width: 480px) {
+    .img-hover {
+        width: 100%;
+        height: auto;
+    }
     .modal-wrap {
         width: calc(100% - 40px);
         padding-bottom: 15px;
@@ -303,7 +311,7 @@
         height: auto;
     }
     .gallery-image img {
-        /* height: 250px; */
+        min-height: 250px;
         height: auto;
         width: 100%;
     }
