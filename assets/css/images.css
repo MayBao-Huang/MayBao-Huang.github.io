@@ -292,6 +292,10 @@
         max-width: 100%;
         height: auto;
     }
+    .gallery-image img {
+        height: 250px;
+        width: 100%;
+    }
 }
 
 @media(max-width:768px) {
@@ -300,5 +304,9 @@
         width: 50%;
         max-width: 50%;
         height: auto;
+    }
+    .gallery-image img {
+        height: 250px;
+        width: 50%;
     }
 }
