@@ -245,6 +245,7 @@
 .modal-wrap img {
     display: block;
     width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -284,5 +285,20 @@
     }
     .modal-wrap p {
         padding: 15px 20px 0 20px;
+    }
+    .modal-wrap img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-width:768px) {
+    .modal-wrap img {
+        display: block;
+        width: 50%;
+        max-width: 50%;
+        height: auto;
     }
 }
