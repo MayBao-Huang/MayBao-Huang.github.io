@@ -278,7 +278,19 @@
     transition: opacity 250ms 500ms ease, transform 350ms 500ms ease;
 }
 
-@media screen and (max-width: 500px) {
+@media(max-width:768px) {
+    .modal-wrap img {
+        width: 100%;
+        height: auto;
+    }
+    .gallery-image img {
+        /* height: 250px; */
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
     .modal-wrap {
         width: calc(100% - 40px);
         padding-bottom: 15px;
@@ -287,26 +299,12 @@
         padding: 15px 20px 0 20px;
     }
     .modal-wrap img {
-        display: block;
         width: 100%;
-        max-width: 100%;
         height: auto;
     }
     .gallery-image img {
-        height: 250px;
-        width: 100%;
-    }
-}
-
-@media(max-width:768px) {
-    .modal-wrap img {
-        display: block;
-        width: 50%;
-        max-width: 50%;
+        /* height: 250px; */
         height: auto;
-    }
-    .gallery-image img {
-        height: 250px;
-        width: 50%;
+        width: 100%;
     }
 }
