@@ -256,7 +256,7 @@ a:hover {
 
 strong,
 b {
-    font-weight: 400;
+    font-weight: 600;
     color: #42474c;
 }
 
@@ -2126,7 +2126,7 @@ button:hover,
 }
 
 #hero p {
-    font-size: 1.5em;
+    font-size: 1em;
     line-height: 1.5em;
 }
 
@@ -2780,4 +2780,15 @@ button:hover,
     #footer header.major {
         margin-bottom: 1em;
     }
+}
+
+
+/* icon與文字對齊 */
+
+.material-icons {
+    display: inline-block;
+    font-size: inherit;
+    line-height: inherit;
+    vertical-align: middle;
+    transform: translateY(-.1em);
 }
